@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Learn</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        button {
+            width: 150px;
+            height: 50px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .selected {
+            background-color: lightblue;
+        }
+        #score {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        #reward {
+            position: absolute;
+            top: 40px;
+            right: 10px;
+        }
+
+    </style>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header" id="demo">
+            <h1>JS Learn </h1>
+            <h2>
+                XP测试
+            </h2>
+            <div id="score">得分: </div>
+            <div id="reward">评价</div>
+        </div>
+        <div class="content">
+            <p>这是xp测试</p>
+
+        </div>
+        <div class="start">
+            <button id="start"onclick="start()">开始</button>
+        </div>
+        <div class="main"style="display: none">
+            <h2 id="question"></h2>
+            <div id="button-container">
+                <button id="previous" onclick="previous()">上一题</button>
+                <button id="next" onclick="next()">下一题</button>
+            </div>
+            <div id="answer-buttons">
+                <button id="yes" onclick="setAnswer('yes')">Yes</button>
+                <button id="no" onclick="setAnswer('no')">No</button>
+            </div>
+        </div>
+        <div id="results"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
