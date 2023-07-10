@@ -23,7 +23,7 @@ function start() {
     next();
     clearTable();
     document.getElementById('start').innerHTML='重新开始'
-    // 显示第一个问题
+
     document.getElementById("question").innerHTML = currentQuestion;
 
 }
