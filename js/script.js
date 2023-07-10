@@ -115,7 +115,7 @@ function submit() {
         tableCell1.innerHTML = bodyParts[i];
         tableCell2.innerHTML = result[questions[i]] || ""; // 未回答
         if(result[questions[i]]=='yes'){
-            score+=1;
+            score+=2;
         }
     }
 
