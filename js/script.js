@@ -9,6 +9,8 @@ var currentQuestion = questions[-1];
 function start() {
     score = 0;
     reward = "";
+    document.getElementById("score").innerHTML = "得分：" + score;
+    document.getElementById("reward").innerHTML = '评价：'+reward;
     var main = document.querySelector(".main");
     main.style.display = "block";
     userAnswers = [];
