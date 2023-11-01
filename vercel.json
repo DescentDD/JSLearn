@@ -1,7 +1,7 @@
 {
     "routes": {
       "/": {
-        "handler": "test.py",
-      },
-    },
+        "handler": "test.py"
+      }
+    }
   }
